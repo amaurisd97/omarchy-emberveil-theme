@@ -18,12 +18,17 @@ foreground = "#e4e0dd"
 
 # Superficies y neutros derivados, fijados de forma explicita para que la
 # ficha del tema los muestre tal cual y no dependan de la derivacion.
-# Valores identicos a los que Omarchy calcula solo: ningun cambio visual.
+# Los derivados coinciden con lo que Omarchy calcula solo.
 dark_background = "#0d0b0b"
 darker_background = "#090707"
 lighter_background = "#110e0e"
 light_foreground = "#e4e0dd"
-muted = "#7d7472"
+
+# muted alimenta el slot ANSI 8 (bright_black), que es el color con el que
+# Herdr pinta la fila activa de su sidebar: antes con L=18 era el mas claro de
+# los 22 temas stock y dejaba la fila ilegible (1.26:1). Bajado a L=12.3, la
+# mediana del catalogo de Omarchy, conservando el matiz 13 del acento.
+muted = "#785c54"
 orange = "#cf777d"
 brown = "#683c3f"
 
@@ -35,7 +40,7 @@ color4 = "#d06269"
 color5 = "#d26a71"
 color6 = "#e09967"
 color7 = "#e4e0dd"
-color8 = "#7d7472"
+color8 = "#785c54"
 color9 = "#edc0c3"
 color10 = "#f7e4d4"
 color11 = "#efd2d4"
