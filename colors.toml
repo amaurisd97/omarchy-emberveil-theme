@@ -1,4 +1,5 @@
 accent = "#d4545c"
+cursor = "#f8f7f6"
 selection = "#3a2427"
 selection_foreground = "#110e0e"
 selection_background = "#d4545c"
