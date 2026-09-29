@@ -19,25 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Credits
--------
-
-Emberveil began as a derivative of Vengeance
-(https://github.com/Grey-007/vengeance) by Grey-007, which is also MIT
-licensed. The original palette, terminal/Zed/GTK file layout and the general
-structure of this theme come from that project; the palette values, the
-selection and border treatment were reworked for this theme.
-
-Neovim support is provided by ashen.nvim
-(https://github.com/ficcdaf/ashen.nvim), used here as a separate dependency
-and not redistributed as part of this theme.
-
-The bundled wallpaper, backgrounds/BG2.webp, was generated with AI image
-tools (ChatGPT and Gemini) and is released under this same MIT license. It was
-veiled and re-encoded for this theme but is otherwise unmodified in content.
-
-Third-party components referenced by this theme, such as aether.nvim, remain
-under their own licenses and are not distributed here.

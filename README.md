@@ -248,4 +248,5 @@ Cycle through the bundled background with `omarchy theme bg next`.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE), and [NOTICE](NOTICE) for the credits that go with
+it.
