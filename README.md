@@ -61,12 +61,14 @@ light (0.77 MB, down from 9.26 MB).
 | `hyprland.conf` | window/decoration settings and colours |
 | `hyprlock.conf` | lock screen colours |
 | `neovim.lua` | Neovim, sets `colorscheme = "ashen"` |
-| `alacritty.toml`, `ghostty.conf`, `kitty.conf`, `warp.yaml` | terminals |
+| `foot.ini` | foot, the default Omarchy terminal |
+| `alacritty.toml`, `ghostty.conf`, `kitty.conf`, `warp.yaml` | other terminals |
 | `gtk.css` | GTK4 / Adwaita apps |
 | `vencord.theme.css` | Discord (Vencord) |
 | `emberveil.zed.json` | Zed |
 | `walker.css`, `wofi.css`, `swayosd.css`, `waybar.css`, `mako.ini` | shell surfaces |
 | `backgrounds/BG2.webp` | desktop background |
+| `preview.png` | preview shown in the theme switcher |
 
 ### Files that `omarchy theme install` does not copy
 
@@ -78,7 +80,7 @@ on your machine:**
 | File | Why it is skipped |
 |---|---|
 | `neovim.lua` | `*.lua` is dropped (Neovim loads it at startup) |
-| `alacritty.toml`, `ghostty.conf`, `kitty.conf` | terminal configs name the program to launch |
+| `alacritty.toml`, `ghostty.conf`, `kitty.conf`, `foot.ini` | terminal configs name the program to launch |
 
 Everything else — `colors.toml`, `backgrounds/`, `preview.png`,
 `hyprland.conf`, `hyprlock.conf`, the CSS files, `btop.theme`,
@@ -120,8 +122,59 @@ Omarchy then regenerates it from the palette on every `omarchy theme set`.
 ## Terminals
 
 The terminal configs are **not** installed automatically. Each one is a drop-in
-file you copy to the right place. Pick the one for the terminal you use; you do
-not need more than one.
+file you copy to the right place. You only need the one for the terminal you
+use.
+
+### foot (Omarchy's default)
+
+`foot.ini` is a complete standalone config: the full Emberveil palette plus a
+translucent blurred background, an 11pt JetBrainsMono Nerd Font, a beam cursor
+and 10 000 lines of scrollback.
+
+```bash
+THEME=~/.config/omarchy/themes/emberveil
+mkdir -p ~/.config/foot
+cp "$THEME/foot.ini" ~/.config/foot/foot.ini
+omarchy restart terminal
+```
+
+Because a theme-supplied `foot.ini` is never regenerated, **editing
+`colors.toml` will no longer update foot** — the palette in `foot.ini` is a
+copy. If you change the palette, mirror it in the `[colors-dark]` section of
+your `foot.ini` too.
+
+Prefer to keep foot tied to the palette? Delete `foot.ini` from your copy of
+the theme. Omarchy then regenerates it from `colors.toml` on every
+`omarchy theme set`, and you can still get the look by adding just the
+presentation settings to `~/.config/foot/foot.ini`:
+
+```ini
+[main]
+include=~/.local/state/omarchy/toggles/foot.ini
+include=~/.local/state/omarchy/current/theme/foot.ini
+term=xterm-256color
+font=JetBrainsMono Nerd Font:size=11
+pad=14x14
+initial-window-mode=windowed
+workers=0
+
+[colors-dark]
+blur=yes
+alpha=0.95
+
+[scrollback]
+lines=10000
+multiplier=7.0
+
+[cursor]
+style=beam
+blink=yes
+```
+
+This second form is the more flexible one: colours stay generated from
+`colors.toml`, and only the presentation is yours.
+
+### Other terminals
 
 ```bash
 THEME=~/.config/omarchy/themes/emberveil
@@ -138,9 +191,6 @@ mkdir -p ~/.config/kitty && cp "$THEME/kitty.conf"        ~/.config/kitty/
 # Warp
 mkdir -p ~/.config/warp-terminal/themes && cp "$THEME/warp.yaml" ~/.config/warp-terminal/themes/
 ```
-
-If you use **foot** (the Omarchy default) you do not need to do anything: foot
-is generated from `colors.toml` automatically.
 
 ## Look'n'feel
 
