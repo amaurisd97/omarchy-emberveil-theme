@@ -1,0 +1,9 @@
+# Override de [image-picker]. selected-border mantiene el acento claro de
+# acento Emberveil.
+scrim                   = "#110e0e"
+scrim-alpha             = 0.5
+text                    = "#e4e0dd"
+selected-border         = "#c96f75"
+selected-border-alpha   = 1.0
+unselected-border       = "#e4e0dd"
+unselected-border-alpha = 0.28

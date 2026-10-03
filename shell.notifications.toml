@@ -1,0 +1,7 @@
+# Override de [notifications]. El countdown usa el acento Emberveil.
+background       = "#110e0e"
+background-alpha = 1.0
+text             = "#e4e0dd"
+border           = "hyprland.active-border"
+border-alpha     = 1.0
+countdown        = "#c96f75"

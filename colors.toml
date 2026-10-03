@@ -1,6 +1,6 @@
 mode = "dark"
 
-accent = "#d4545c"
+accent = "#c96f75"
 cursor = "#f8f7f6"
 selection = "#3a2427"
 selection_foreground = "#110e0e"
@@ -11,20 +11,20 @@ selection_background = "#d4545c"
 # en vez de rojo oscuro: contrasta contra el fondo sin romper el efecto de
 # fundido. Medido contra las zonas del fondo, el gris sube el contraste de
 # 1.05-1.13 (invisible) a 1.41-1.67 (visible).
-hyprland_active_border = "#d4545c #443c44 #2e2a30 #443c44 #d4545c"
+hyprland_active_border = "#c96f75 #443c44 #2e2a30 #443c44 #c96f75"
 
 background = "#110e0e"
 foreground = "#e4e0dd"
 
 color0 = "#110e0e"
 color1 = "#d16168"
-color2 = "#e0985c"
+color2 = "#d98364"
 color3 = "#cf777d"
 color4 = "#d06269"
 color5 = "#d26a71"
-color6 = "#e09967"
+color6 = "#d7b29a"
 color7 = "#e4e0dd"
-color8 = "#7d7472"
+color8 = "#504b55"
 color9 = "#edc0c3"
 color10 = "#f7e4d4"
 color11 = "#efd2d4"

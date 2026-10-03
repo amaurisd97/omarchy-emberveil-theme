@@ -1,0 +1,12 @@
+# Override de [polkit]. accent (glyph del candado/tinte de seleccion)
+# mantiene el acento Emberveil.
+background       = "#110e0e"
+background-alpha = 1.0
+text             = "#e4e0dd"
+text-error       = "#d16168"
+border           = "hyprland.active-border"
+border-error     = "#d16168"
+border-alpha     = 1.0
+scrim            = "#110e0e"
+scrim-alpha      = 0.5
+accent           = "#c96f75"

@@ -31,7 +31,7 @@
 @define-color theme_fg_color @foreground;
 @define-color theme_base_color @background;
 @define-color theme_text_color @foreground;
-@define-color theme_selected_bg_color @color4;
+@define-color theme_selected_bg_color #c96f75;
 @define-color theme_selected_fg_color @background;
 @define-color insensitive_bg_color alpha(@background, 0.5);
 @define-color insensitive_fg_color alpha(@foreground, 0.5);
@@ -40,13 +40,12 @@
 @define-color theme_unfocused_fg_color @foreground;
 @define-color theme_unfocused_base_color @background;
 @define-color theme_unfocused_text_color @foreground;
-@define-color theme_unfocused_selected_bg_color @color4;
+@define-color theme_unfocused_selected_bg_color #c96f75;
 @define-color theme_unfocused_selected_fg_color @background;
 
-/* Adwaita Color Overrides */
-@define-color accent_bg_color @color4;
+@define-color accent_bg_color #c96f75;
 @define-color accent_fg_color @color15;
-@define-color accent_color @color6;
+@define-color accent_color #c96f75;
 
 @define-color window_bg_color @background;
 @define-color window_fg_color @foreground;
@@ -133,8 +132,8 @@
 /* Dropdown/ComboBox colors */
 @define-color dropdown_bg_color @background;
 @define-color dropdown_fg_color @foreground;
-@define-color dropdown_hover_bg_color alpha(@color4, 0.3);
-@define-color dropdown_selected_bg_color @color4;
+@define-color dropdown_hover_bg_color alpha(#c96f75, 0.3);
+@define-color dropdown_selected_bg_color #c96f75;
 @define-color dropdown_selected_fg_color @background;
 
 /* Pathbar/Breadcrumb colors */
@@ -159,11 +158,11 @@
 @define-color treeview_fg_color @foreground;
 
 /* Link colors */
-@define-color link_color @color4;
-@define-color link_visited_color @color5;
+@define-color link_color #d5888f;
+@define-color link_visited_color #c96f75;
 
 /* Selection colors (for text selection, etc) */
-@define-color selection_bg_color @color4;
+@define-color selection_bg_color #c96f75;
 @define-color selection_fg_color @background;
 
 /* Content view (file browser grid/list) */

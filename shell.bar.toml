@@ -1,0 +1,12 @@
+# Override de [bar]. Modulos activos en acento Emberveil.
+background       = "#110e0e"
+background-alpha = 1.0
+text             = "#e4e0dd"
+# Modules calling attention to themselves (recording, voxtype, alerts, updates)
+active           = "#c96f75"
+# Cross-axis size at font base-size 12. size-horizontal is the height of
+# top/bottom bars; size-vertical is the width of left/right bars. With
+# scale-with-font enabled, these grow/shrink with [font] base-size.
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28

@@ -1,0 +1,13 @@
+# Override de [menu]. selected-text mantiene el acento Emberveil.
+background                = "#110e0e"
+background-alpha          = 1.0
+text                      = "#e4e0dd"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 1.0
+scrim                     = "#110e0e"
+scrim-alpha               = 0.5
+selected-background       = "#e4e0dd"
+selected-background-alpha = 0.08
+selected-text             = "#c96f75"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.25

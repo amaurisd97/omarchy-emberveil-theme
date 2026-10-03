@@ -1,0 +1,13 @@
+# Override de [lock]. selection (tinte de seleccion del input) mantiene el
+# acento Emberveil.
+background       = "#110e0e"
+background-alpha = 0.8
+text             = "#e4e0dd"
+placeholder      = "#8f8783"
+text-error       = "#d16168"
+border           = "hyprland.active-border"
+border-active    = "hyprland.active-border"
+border-error     = "#d16168"
+border-alpha     = 1.0
+selection        = "#c96f75"
+selection-alpha  = 0.45
